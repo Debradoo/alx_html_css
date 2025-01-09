@@ -1,0 +1,43 @@
+.nav-header {
+    display: flex;
+    gap: 40px 100px;
+    color: rgba(255, 255, 255, 1);
+    white-space: nowrap;
+    flex-wrap: wrap;
+    font: 700 12px Source Sans Pro, sans-serif;
+  }
+  
+  .logo {
+    aspect-ratio: 5.75;
+    object-fit: contain;
+    object-position: center;
+    width: 167px;
+    max-width: 100%;
+  }
+  
+  .nav-links {
+    align-self: start;
+    display: flex;
+    gap: 40px 50px;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .nav-header {
+      white-space: initial;
+    }
+    
+    .nav-links {
+      white-space: initial;
+    }
+  }
