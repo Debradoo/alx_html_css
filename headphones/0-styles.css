@@ -170,6 +170,39 @@ font-size: 32px;
 }
 
  /* Responsive Styles */
+ @media (max-width: 768px) {
+    body{
+        background-image: url(images/headphones_hero_1.jpg);
+        background-size: cover;
+    background-position: top center; /* Adjust for mobile view */
+    height: auto;
+    padding: 20px;
+    }
+  
+    .hero-header {
+        font-size: 1.8rem;
+      }
+    
+      .hero-text {
+        font-size: 1rem;
+        margin-bottom: 15px;
+      }
+    
+      .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+      }
+    
+      .intro-text {
+        font-size: 0.9rem;
+        text-align: justify;
+      }
+    
+      .hero-content {
+        padding: 15px;
+        margin-top: 150px;
+      }
+  }
  @media screen and (max-width: 480px) {
     header {
       flex-direction: column;
