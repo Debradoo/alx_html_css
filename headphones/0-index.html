@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link rel="stylesheet" href="0-styles.css"> <!-- Link to external CSS -->
-</head>
-<body>
-    
-    <header>
+    <link rel="stylesheet" href="0-styles.css" />
+    <!-- Link to external CSS -->
+  </head>
+  <body>
+    <div class="hero-page">
+      <header>
         <nav class="nav">
-          <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('show');">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+          <div class="logo">
+            <img src="images/logo_headphones.png" alt="logo" />
           </div>
-          <img src="images/logo_headphones.png" alt="logo" class="logo"> <!-- Insert your logo here -->
+          <!-- Hamburger Menu -->
+          <input
+            type="checkbox"
+            id="hamburger-toggle"
+            class="hamburger-toggle"
+          />
+          <label for="hamburger-toggle" class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
           <ul class="nav-links">
-            <li><a href="#about">What we do</a></li>
-            <li><a href="#services">Our Results</a></li>
+            <li><a href="#what-we-do">What we do</a></li>
+            <li><a href="#our-results">Our Results</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </nav>
       </header>
-
-     <!-- hero content -->
-     <div class="hero-content">
-        <h1 class="hero-header">Lorem ipsum dolor set amet lorem </h1>
-        <p class="hero-text">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+      <!-- hero content -->
+      <div class="hero-content">
+        <h1 class="hero-header">Lorem ipsum dolor set amet lorem</h1>
+        <p class="hero-text">
+          Lorem ipsum dolor set amet lorem ipsum dolor set
+        </p>
         <a href="#contact" class="btn">CALL TO ACTION</a>
         <p class="intro-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sunt neque cupiditate dolores laudantium voluptatem consequuntur numquam molestias. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias eos labore animi et aliquam deserunt nisi. Quas quaerat reiciendis nihil?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, ipsam.lorem50 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni itaque iure voluptate harum veritatis, aliquid, cum accusamus vitae, qui ipsa beatae ex praesentium exercitationem. 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sunt
+          neque cupiditate dolores laudantium voluptatem consequuntur numquam
+          molestias. Lorem ipsum dolor sit
         </p>
       </div>
-   
-   
- 
-</body>
+    </div>
+  </body>
 </html>
